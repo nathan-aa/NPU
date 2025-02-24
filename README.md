@@ -7,12 +7,10 @@ Currently all API request are centralized in a single service, but in the future
 NPU/  
 │── src/  
 │   ├── main.cpp       # Entry point of the backend  
-│   ├── creation_api/  
-│       - NPU creation source files  
-│   ├── user_api/  
-│      - User data handling source files  
+│   ├── creation_api/  # NPU creation source files  
+│   ├── user_api/      # User data handling source files  
 │── include/  
-│   ├── crow_all.h     # Crow library (if not using external dependency   manager)  
+│   ├── crow_all.h     # Crow library  
 │── CMakeLists.txt     # CMake build configuration  
 │── README.md          # Project documentation  
 │── .gitignore         # Ignore compiled files & database  
