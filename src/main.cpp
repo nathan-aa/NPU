@@ -1,20 +1,20 @@
-// src/main.cpp
-#include "crow_all.h"
-#include "npu_routes.h"
-#include "npu_database.h"
-#include "user_routes.h"
-#include "user_database.h"
+#include "crow.h"
+#include "routes.h"
+#include "database.h"
+#include "user_api.h"
+#include "creation_api.h"
 #include <iostream>
 
-// Initializing the application and databases.
+// Initialize database and setup routes
 int main() {
     crow::SimpleApp app;
     init_db();
 
-    setup_npu_routes(app);
-    setup_user_routes(app);
+    UserAPI userAPI;
+    userAPI.setup_routes(app);
+
+    CreationAPI creationAPI;
+    creationAPI.setup_routes(app);
 
     app.port(8080).multithreaded().run();
 }
-
-// EOF
