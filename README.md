@@ -6,21 +6,20 @@ Currently all API request are centralized in a single service, but in the future
 ## File tree
 NPU/  
 │── src/  
-│$~~~$├── main.cpp $~~~$ # Entry point of the backend  
-│$~~~$├── creation_api/  
-│$~~~~~~$ - NPU creation source files  
-│$~~~$├── user_api/  
-│$~~~~~~$ - User data handling source files  
+│   ├── main.cpp       # Entry point of the backend  
+│   ├── creation_api/  
+│       - NPU creation source files  
+│   ├── user_api/  
+│      - User data handling source files  
 │── include/  
-│$~~~$├── crow_all.h $~~~~~$# Crow library (if not using external dependency   manager)  
-│── CMakeLists.txt $~~~$ # CMake build configuration  
-│── README.md $~~~~~$ # Project documentation  
-│── .gitignore $~~~~~~~~~$ # Ignore compiled files & database  
+│   ├── crow_all.h     # Crow library (if not using external dependency   manager)  
+│── CMakeLists.txt     # CMake build configuration  
+│── README.md          # Project documentation  
+│── .gitignore         # Ignore compiled files & database  
 
 
 ## REST API
 We use the Crow lightweight web framework (which is similar to Flask).
-
 
 ## Test unit
 To be implemented
