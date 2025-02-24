@@ -2,7 +2,7 @@
 #include <bcrypt/BCrypt.hpp>
 #include <iostream>
 
-const std::string DB_CONN = "dbname=npu_db user=postgres password=yourpassword host=localhost";
+const std::string DB_CONN = "dbname=user_db user=postgres password=yourpassword host=localhost";
 
 crow::json::wvalue UserDAO::create_user(const std::string& username, const std::string& email, const std::string& hashed_password) {
     try {
