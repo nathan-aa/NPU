@@ -1,7 +1,7 @@
 #include "creation_manager.h"
 
-crow::json::wvalue CreationManager::upload_creation(int user_id, const std::string& description, const std::string& element_name) {
-    return creationDAO.upload_creation(user_id, description, element_name);
+crow::json::wvalue CreationManager::create_creation(int user_id, const std::string& description, const std::string& element_name) {
+    return creationDAO.create_creation(user_id, description, element_name);
 }
 
 crow::json::wvalue CreationManager::score_creation(int creation_id, int score) {

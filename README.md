@@ -7,8 +7,10 @@ Currently all API request are centralized in a single service, but in the future
 NPU/  
 │── src/  
 │$~~~$├── main.cpp $~~~$ # Entry point of the backend  
-│$~~~$├──routes/  
-│$~~~~~~$ - Routes related source files  
+│$~~~$├── creation_api/  
+│$~~~~~~$ - NPU creation source files  
+│$~~~$├── user_api/  
+│$~~~~~~$ - User data handling source files  
 │$~~~~$├──db/  
 │$~~~~~~$ - Databases related source files  
 │── include/  

@@ -39,6 +39,10 @@ crow::json::wvalue UserDAO::get_user(int id) {
     }
 }
 
+crow::json::wvalue UserDAO::get_user(int id) {
+    // Not implemented
+}
+
 crow::json::wvalue UserDAO::authenticate_user(const std::string& email, const std::string& password) {
     try {
         pqxx::connection conn(DB_CONN);
