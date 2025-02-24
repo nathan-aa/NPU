@@ -6,7 +6,7 @@ services:
     container_name: npu_postgres
     restart: always
     environment:
-      POSTGRES_DB: npu_db
+      POSTGRES_DB: creation_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: yourpassword
     ports:
@@ -21,7 +21,7 @@ services:
     depends_on:
       - db
     environment:
-      DB_CONN: "dbname=npu_db user=postgres password=yourpassword host=db"
+      DB_CONN: "dbname=creation_db user=postgres password=yourpassword host=db"
     ports:
       - "8080:8080"
 

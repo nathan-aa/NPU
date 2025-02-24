@@ -1,7 +1,7 @@
 #include "creation_dao.h"
 #include <iostream>
 
-const std::string DB_CONN = "dbname=npu_db user=postgres password=yourpassword host=localhost";
+const std::string DB_CONN = "dbname=creation_db user=postgres password=yourpassword host=localhost";
 
 crow::json::wvalue CreationDAO::create_creation(int user_id, const std::string& description, const std::string& element_name) {
     try {

@@ -24,7 +24,7 @@ RUN mkdir build && cd build && cmake .. && make
 EXPOSE 8080
 
 # Set environment variables for database connection
-ENV DB_CONN="dbname=npu_db user=postgres password=yourpassword host=db" # TODO: edit db connection string
+ENV DB_CONN="dbname=creation_db user=postgres password=yourpassword host=db" # TODO: edit db connection string
 
 # Run the application
 CMD ["./build/main"]

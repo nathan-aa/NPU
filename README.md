@@ -11,8 +11,6 @@ NPU/
 │$~~~~~~$ - NPU creation source files  
 │$~~~$├── user_api/  
 │$~~~~~~$ - User data handling source files  
-│$~~~~$├──db/  
-│$~~~~~~$ - Databases related source files  
 │── include/  
 │$~~~$├── crow_all.h $~~~~~$# Crow library (if not using external dependency   manager)  
 │── CMakeLists.txt $~~~$ # CMake build configuration  
