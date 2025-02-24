@@ -39,7 +39,12 @@ crow::json::wvalue UserDAO::get_user(int id) {
     }
 }
 
-crow::json::wvalue UserDAO::get_user(int id) {
+crow::json::wvalue UserDAO::update_user(int id) {
+    // Not implemented
+}
+
+
+crow::json::wvalue UserDAO::delete_user(int id) {
     // Not implemented
 }
 
